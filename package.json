@@ -9,15 +9,16 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onLanguage:ldap_filter"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "ldapfilterformatter.formatLdapFilter",
         "title": "Format LDAP Filter"
+      },
+      {
+        "command": "sqlstatementextractor.extractSqlStatements",
+        "title": "Extract SQL Statements from Query Plan"
       }
     ]
   },
